@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+import requests
+source = "https://www.random.org/integer-sets/?sets=1&num=6&min=1&max=60&sort=on&order=index&format=plain&rnd=new"
+number = requests.get(source)
+number = number.text
+print()
+print(number)
